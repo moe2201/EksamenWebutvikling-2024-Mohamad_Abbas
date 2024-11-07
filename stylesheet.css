@@ -8,7 +8,7 @@
     text-decoration: none;
 }
 
-ul{
+div{
     position: fixed;
     width: 100%;
     top: 0;
@@ -18,4 +18,68 @@ ul{
     align-items: center;
     justify-content: space-between;
     padding: 10px 10%;
+    color: black;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px 3%;
+}
+
+form{
+    background: grey;
+    border-radius: 25px;
+    position: relative;
+}
+
+input{
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 25px;
+    font-size: 20px;
+    padding: 8px 40px 8px 20px;
+    border: none;
+    box-shadow: 0 5px 4px 1px black;
+    
+}
+
+input:focus{
+    outline: none;
+}
+
+button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 100%;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-size: 18px;
+    outline: black;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+
+.footer-logo, .footer-contact, .footer-links, .footer-social {
+    min-width: 150px;
+    align-items: center;
+}
+
+.footer-social a {
+    margin-right: 10px;
+}
+
+footer{
+    place-content: bottom;
 }
