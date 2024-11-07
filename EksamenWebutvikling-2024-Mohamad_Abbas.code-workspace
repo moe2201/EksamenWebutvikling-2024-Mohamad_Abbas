@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "EksamenWebutvikling-2024-Mohamad_Abbas",
+			"path": "."
+		},
+		{
+			"name": "fontawesome-free-6.6.0-web",
+			"path": "../../../Desktop/fontawesome-free-6.6.0-web"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "EksamenWebutvikling-2024-Mohamad_Abbas"
+	}
+}
