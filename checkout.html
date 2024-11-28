@@ -5,46 +5,206 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-handel landingsside</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
+    <header class="header">
+        <form class="search-form">
+            <input type="text" placeholder="Søk her...">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></button>
+        </form>
+        <nav class="navigation">
+            <ul class="nav-links">
+                <li><a href="index.html">Hjem</a></li>
+                <li><a href="#populære-produkter">Produkter</a></li>
+                <li><a href="index.html" class="logo">LOGO</a></li>
+                <li><a href="#katagorier">Kategorier</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+        </nav>
+        <div class="ikoner">
+            <a href="#"><i class="fa-regular fa-user"></i></a>
+            <a href="#"><i class="fa-regular fa-heart"></i></a>
+            <a href="checkout.html"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+    </header>
+    <main>
+        <h1 class="kasse-text">Kasse</h1>
+        <section class="shoppingbag">
+            <h2>1. SHOPPINGBAGEN DIN</h2>
+            <article class="product-item">
+                <img src="Bilder/black-and-white-2561703_640.jpg" alt="dress">
+                <!--Image by <a href="https://pixabay.com/users/stocksnap-894430/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2561703">StockSnap</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2561703">Pixabay</a>-->
+                    <h3>PRODUCKT NAME</h3>
+                    <p>Kr 1999</p>
+                    <p>Farge: Beige</p>
+                    <label for="size-1">Størelse</label>
+                    <select id="size-1">
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                    </select>
+                    <label for="quantity-1">Antall</label>
+                    <input type="number" id="quantity-1" class="quantity" value="1" min="1" step="1">
+                    <div class="actions">
+                        <button class="hjerte"><i class="fa-regular fa-heart"></i></button>
+                        <button class="remove"><i class="fas fa-trash"></i></button>
+                    </div>
+            </article>
+            <article class="product-item">
+                <img src="Bilder/black-and-white-2561703_640.jpg" alt="dress">
+                 <!--Image by <a href="https://pixabay.com/users/stocksnap-894430/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2561703">StockSnap</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2561703">Pixabay</a>-->
+                    <h3>PRODUCKT NAME</h3>
+                    <p>Kr 1999</p>
+                    <p>Farge: Beige</p>
+                    <label for="size-2">Størelse</label>
+                    <select id="size-2">
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                    </select>
+                    <label for="quantity-2">Antall</label>
+                    <input type="number" id="quantity-2" class="quantity" value="1" min="1">
+                    <div class="actions">
+                        <button class="hjerte"><i class="fa-regular fa-heart"></i></button>
+                        <button class="remove"><i class="fas fa-trash"></i></button>
+                    </div>
+            </article>
+            <article class="product-item">
+                <img src="Bilder/black-and-white-2561703_640.jpg" alt="dress">
+                <!--Image by <a href="https://pixabay.com/users/stocksnap-894430/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2561703">StockSnap</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2561703">Pixabay</a>-->
+                    <h3>PRODUCKT NAME</h3>    
+                    <p>Kr 1999</p>
+                    <p>Farge: Beige</p>
+                    <label for="size-3">Størelse</label>
+                    <select id="size-3">
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                    </select>
+                    <label for="quantity-3">Antall</label>
+                    <input type="number" id="quantity-3" class="quantity" value="1" min="1">
+                    <div class="actions">
+                        <button class="hjerte"><i class="fa-regular fa-heart"></i></button>
+                        <button class="remove"><i class="fas fa-trash"></i></button>
+                    </div>
+            </article>
+        </section>
 
+        <section class="din-info">
+            <h2>2. Dine opplysninger</h2>
+            <form method="get" action="#levering-info">
+                <p>Leveringsadresse</p>
+                <section class="two-columns">
+                    <label for="fname">Fornavn</label>
+                    <input type="text" id="fname" placeholder="Nora*" required>
 
-    
+                    <label for="enavn">Etternavn</label>
+                    <input type="text" id="enavn" placeholder="Nordman*" required>
+                </section>
 
+                <label for="adresse">Gateadresse</label>
+                <input type="text" id="adresse" placeholder="B R A Veien 4*" required>
 
+                <section class="half-row">
+                    <label for="postkode">Postnummer</label>
+                    <input type="number" id="postkode" placeholder="1752*" required>
 
+                    <label for="poststed">Poststed</label>
+                    <input type="text" id="poststed" placeholder="Halden*">
+                </section>
+                <div class="section-break"></div>
 
+                <p>Kontaktinformasjon</p>
+                <label for="epost">E-post</label>
+                <input type="email" id="epost" placeholder="Noranordman@hiof.no...*" required>
 
+                <label for="tlf">Telefon</label>
+                <input type="tel" id="tlf" pattern="(\d{8}|\d{3} \d{2} \d{3})" placeholder="+4749***018" required>
+                <button type="submit">Lagre</button>
+            </form>
+            <a href="checkout.html">Avbryt</a>
+        </section>
 
+    <section class="valg-cont">    
+        <section class="leverings-valg" id="levering-info">
+            <h2>3. Levering</h2>
+            <h3>LEVERINGSVALG</h3>
+            <form>
+                <input type="radio" id="express-hjemmelevering" name="delivery" required>
+                <label for="express-hjemmelevering">Express hjemlevering</label>
+                <p>3-4 Virkedager</p>
+                <p class="price">59 kr <i class="fa-solid fa-truck"></i></p>
+                <p id="linje">bestill hverdag før 08:00* for levering neste arbeidsdag. leveres hjem til deg før frokost mandag til lørdag. *For levering til postnummer 4000-7999 er leveringstiden 2 arbeidsdager, for postnummer 8000-9999 er leveringstiden 3 arbeidsdager.</p>
+  
+                <input type="radio" id="express-pakke" name="delivery">
+                <label for="express-pakke">Express pakke til utleveringssted</label>
+                <p>1-3 Virkedager</p>
+                <p id="linje"> 59 kr <i class="fa-brands fa-dhl"></i></p>
+   
+                <input type="radio" id="standard-hjemlevering" name="delivery">
+                <label for="standard-hjemlevering">Standard hjemlevering</label>
+                <p>5-8 Virkedager</p>
+                <p class="price"> Gratis <i class="fa-solid fa-box"></i></p>
+                <p id="linje">Leveres hjem til deg før frokost mandag til lørdag innen 4-7 hverdager.</p>
+            </form>
+        </section>
+    </section>
+        <section class="betaling-info">
+            <h2>4. Betaling</h2>
+            <h3>BETAL MED KORT <i class="fa-solid fa-credit-card"></i></h3>
+            <form>
+                <label for="kort-nummer">Kortnummer</label>
+                <input type="number" id="kort-nummer" placeholder="342342****4435" required>
 
-    <footer>
+                <label for="expiry">Utløpsdato</label>
+                <input type="date" id="expiry" required>
+
+                <label for="CVC">CVC/CVV</label>
+                <input type="number" id="CVC" placeholder="CVC/CVV" required>
+
+                <hr class="divider">
+
+                <p class="total-amount">Å betale inkl. mva. <strong>1 199 kr</strong></p>
+
+                <button type="submit" class="fullfor-knapp">Fullfør kjøp</button>
+
+                <p class="confirmation-text">Du bekrefter herved at opplysningene og dokumentene du har oppgitt er korrekte og fullstendige. leverandøren forbeholder seg retten til å heve eller avlustte avtaleforholdet dersom deet foreligger uriktige eller ufullstendige opplysninger</p>
+                <section class="conf">
+                    <input type="checkbox" id="nyhets" class="godta-info" required>
+                    <label for="nyhets" class="checkbox-label">Ja takk! Send nyhetsbrev ril meg.</label>
+
+                    <input type="checkbox" id="tekstmeldinger" class="nyheter-box">
+                    <label for="tekstmeldinger" class="checkbox-label-1">Jeg ønsker å motta tekstmeldinger med tilbud og nyheter.</label>
+                </section>
+            </form>
+        </section>
+    </main>
+    <footer id="kontakt">
         <!--Logo + innhold-->
         <section class="footer-content">
-            <article class="footer-logo">
-                <h2>LOGO</h2>
-                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
-            </article>
-            <h2>LOGO</h2>   
+            <h2>LOGO</h2>
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
         </section>
         <!--Kontakt-->
         <section class="footer-contact">
             <h3>KONTAKT</h3>
-            <p><i class="fa-solid fa-location-dot"></i> Adresse: B R A Veien 4, 1757 Halden </p>
-            <p><i class="fa-solid fa-phone"></i> Telefon: 69 69 80 00 </p>
-            <p><i class="fa-solid fa-envelope"></i> E-post: halden@hiof.no </p>
-            <p><i class="fa-solid fa-clock"></i> Åpningstider: Stenger 15:00 </p>
+            <p><i class="fa-solid fa-location-dot"></i><strong>Adresse:</strong> B R A Veien 4, 1757 Halden </p>
+            <p><i class="fa-solid fa-phone"></i><strong>Telefon:</strong> 69 69 80 00 </p>
+            <p><i class="fa-solid fa-envelope"></i><strong>E-post:</strong> halden@hiof.no </p>
+            <p><i class="fa-solid fa-clock"></i><strong>Åpningstider:</strong> Stenger 15:00 </p>
         </section>
         <!--Snarveier-->
         <section class="footer-links">
             <h3>SNARVEIER</h3>
             <ul>
                 <li><a href="product.html">Produkter</a></li>
-                <li><a href="#">Kategorier</a></li>
-                <li><a href="#">Kontakt oss</a></li>
+                <li><a href="#katagorier">Katagorier</a></li>
+                <li><a href="#kontakt">Kontakt oss</a></li>
             </ul>
         </section>
         <!--Sosiale Medier-->
-        <section class="fotter-social">
+        <section class="footer-social">
             <h3>SOSIALE MEDIER</h3>
             <a href="#"><i class="fa-brands fa-instagram"></i></a>
             <a href="#"><i class="fa-brands fa-facebook"></i></a>
