@@ -3,40 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-handel landingsside</title>
+    <title> Hjem - E-handel </title>
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
-    <header class="header">
-        <form class="search-form">
-            <input type="text" placeholder="Søk her...">
-            <button type="submit"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></button>
+    <a href="#main-content" class="skip-link">Hopp til innhold</a>
+    <header class="header" role="banner">
+        <form class="search-form" role="search" aria-label="Søk på siden">
+            <input type="text" id="search" placeholder="Søk her...">
+            <button type="submit" aria-label="Utfør søk"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></button>
         </form>
-        <nav class="navigation">
+        <nav class="navigation" aria-label="Hovedmeny">
             <ul class="nav-links">
                 <li><a href="index.html">Hjem</a></li>
                 <li><a href="#populære-produkter">Produkter</a></li>
-                <li><a href="index.html" class="logo">LOGO</a></li>
+                <li><a href="index.html" class="logo" aria-label>LOGO</a></li>
                 <li><a href="#katagorier">Kategorier</a></li>
                 <li><a href="#kontakt">Kontakt</a></li>
             </ul>
         </nav>
-        <div class="ikoner">
-            <a href="#"><i class="fa-regular fa-user"></i></a>
-            <a href="#"><i class="fa-regular fa-heart"></i></a>
-            <a href="checkout.html"><i class="fas fa-shopping-cart"></i></a>
+        <div class="ikoner" aria-label="Brukermeny">
+            <a href="#" aria-label="Profil"><i class="fa-regular fa-user"></i></a>
+            <a href="#" aria-label="Favoritter"><i class="fa-regular fa-heart"></i></a>
+            <a class="ikone-kart" href="checkout.html" aria-label="Handlekurv"><i class="fas fa-shopping-cart"></i></a>
         </div>
     </header>
-    <main>
-        <section class="banner">
-            <h1>Et harum quidem rerum facilis est et expedita distinctio.</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <main id="main-content">
+        <section class="banner" aria-labelledby="banner-heading">
+            <h1 id="banner-heading">Et harum quidem rerum facilis est et expedita distinctio.</h1>
+            <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus</p>
             <button>Les mer</button>
         </section>
 
         <section id="populære-produkter" class="products">
-            <h2>Våre mest populære produkter</h2>
+            <h2 id="populære-produkter-heading">Våre mest populære produkter</h2>
             <p>Oppdag det beste av det beste</p>
             <button class="new-products" type="button">New Product</button>
             <button type="button">Special Price</button>
@@ -44,91 +45,91 @@
 
             <div class="produkt-grid">
                 <a href="product.html">
-                    <article class="produkt-kort">
-                        <img src="Bilder/Bmw.png" alt="Produkt 1">
-                        <i class="fa-regular fa-heart heart-icone"></i>
+                    <article class="produkt-kort" aria-label="Produkt 1">
+                        <img src="Bilder/Bmw.png" alt="Bilde av produkt 1">
+                        <i class="fa-regular fa-heart heart-icone" aria-label="legg til i favoritter"></i>
                         <h3>Produktnavn</h3>
                         <p>Kr 1999</p>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-solid fa-star" aria-label="Full Stjerne"></i>
+                        <i class="fa-solid fa-star" aria-label="Full Stjerne"></i>
+                        <i class="fa-solid fa-star" aria-label="Full Stjerne"></i>
+                        <i class="fa-solid fa-star" aria-label="Full Stjerne"></i>
+                        <i class="fa-regular fa-star" aria-label="Tøm Stjerne"></i>
                         <span>842 REVIEWS</span>
                     <!--Bildet er tatt av <a href="https://pixabay.com/no/users/toby_parsons-4634294/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3169357">Toby Parsons</a> fra <a href="https://pixabay.com/no//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3169357">Pixabay</a>-->
                     </article>
                 </a>
                 <a href="product.html">
-                    <article class="produkt-kort">
-                        <img src="Bilder/Bmw.png" alt="Produkt 1">
-                        <i class="fa-regular fa-heart heart-icone"></i>
+                    <article class="produkt-kort" aria-label="Produkt 2">
+                        <img src="Bilder/Bmw.png" alt="Bilde av produkt 2">
+                        <i class="fa-regular fa-heart heart-icone" aria-label="Legg til i favoritter"></i>
                         <h3>Produktnavn</h3>
                         <p>Kr 1999</p>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-solid fa-star" aria-label="Full Stjerne"></i>
+                        <i class="fa-solid fa-star" aria-label="Full Stjerne"></i>
+                        <i class="fa-solid fa-star" aria-label="Full Stjerne"></i>
+                        <i class="fa-solid fa-star" aria-label="Full Stjerne"></i>
+                        <i class="fa-regular fa-star" aria-label="Tøm Stjerne"></i>
                         <span>842 REVIEWS</span>
                     <!--Bildet er tatt av <a href="https://pixabay.com/no/users/toby_parsons-4634294/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3169357">Toby Parsons</a> fra <a href="https://pixabay.com/no//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3169357">Pixabay</a>-->
                     </article>
                 </a>
                 <a href="product.html">
-                    <article class="produkt-kort">
-                        <img src="Bilder/Bmw.png" alt="Produkt 1">
-                        <i class="fa-regular fa-heart heart-icone"></i>
+                    <article class="produkt-kort" aria-label="Produkt 3">
+                        <img src="Bilder/Bmw.png" alt="Bilde av produkt 3">
+                        <i class="fa-regular fa-heart heart-icone" aria-label="Legg til i favoritter"></i>
                         <h3>Produktnavn</h3>
                         <p>Kr 1999</p>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-solid fa-star" aria-label="Full Stjerne"></i>
+                        <i class="fa-solid fa-star" aria-label="Full Stjerne"></i>
+                        <i class="fa-solid fa-star" aria-label="Full Stjerne"></i>
+                        <i class="fa-solid fa-star" aria-label="Full Stjerne"></i>
+                        <i class="fa-regular fa-star" aria-label="Tøm Stjerne"></i>
                         <span>842 REVIEWS</span>
                     <!--Bildet er tatt av <a href="https://pixabay.com/no/users/toby_parsons-4634294/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3169357">Toby Parsons</a> fra <a href="https://pixabay.com/no//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3169357">Pixabay</a>-->
                     </article>
                 </a>
                 <a href="product.html">
-                    <article class="produkt-kort">
-                        <img src="Bilder/Bmw.png" alt="Produkt 1">
-                        <i class="fa-regular fa-heart heart-icone"></i>
+                    <article class="produkt-kort" aria-label="Produkt 4">
+                        <img src="Bilder/Bmw.png" alt="Bilde av produkt 4">
+                        <i class="fa-regular fa-heart heart-icone" aria-label="Legg til i favoritter"></i>
                         <h3>Produktnavn</h3>
                         <p>Kr 1999</p>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-solid fa-star" aria-label="Full Stjerne"></i>
+                        <i class="fa-solid fa-star" aria-label="Full Stjerne"></i>
+                        <i class="fa-solid fa-star" aria-label="Full Stjerne"></i>
+                        <i class="fa-solid fa-star" aria-label="Full Stjerne"></i>
+                        <i class="fa-regular fa-star" aria-label="Tøm stjerne"></i>
                         <span>842 REVIEWS</span>
                     <!--Bildet er tatt av <a href="https://pixabay.com/no/users/toby_parsons-4634294/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3169357">Toby Parsons</a> fra <a href="https://pixabay.com/no//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3169357">Pixabay</a>-->
                     </article>
                 </a>
                 <a href="product.html">
-                    <article class="produkt-kort">
-                        <img src="Bilder/Bmw.png" alt="Produkt 1">
-                        <i class="fa-regular fa-heart heart-icone"></i>
+                    <article class="produkt-kort" aria-label="Produkt 5">
+                        <img src="Bilder/Bmw.png" alt="Bilde av produkt 5">
+                        <i class="fa-regular fa-heart heart-icone" aria-label="Legg til i favoritter"></i>
                         <h3>Produktnavn</h3>
                         <p>Kr 1999</p>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-solid fa-star" aria-label="Full Stjerne"></i>
+                        <i class="fa-solid fa-star" aria-label="Full Stjerne"></i>
+                        <i class="fa-solid fa-star" aria-label="Full Stjerne"></i>
+                        <i class="fa-solid fa-star" aria-label="Full Stjerne"></i>
+                        <i class="fa-regular fa-star" aria-label="Tøm stjerne"></i>
                         <span>842 REVIEWS</span>
                     <!--Bildet er tatt av <a href="https://pixabay.com/no/users/toby_parsons-4634294/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3169357">Toby Parsons</a> fra <a href="https://pixabay.com/no//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3169357">Pixabay</a>-->
                     </article>
                 </a>
                 <a href="product.html">
-                     <article class="produkt-kort">
-                        <img src="Bilder/Bmw.png" alt="Produkt 1">
-                        <i class="fa-regular fa-heart heart-icone"></i>
+                     <article class="produkt-kort" aria-label="Produkt 6">
+                        <img src="Bilder/Bmw.png" alt="Bilde av produkt 6">
+                        <i class="fa-regular fa-heart heart-icone" aria-label="Legg til favoritter"></i>
                         <h3>Produktnavn</h3>
                         <p>Kr 1999</p>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-solid fa-star" aria-label="Full Stjerne"></i>
+                        <i class="fa-solid fa-star" aria-label="Full Stjerne"></i>
+                        <i class="fa-solid fa-star" aria-label="Full Stjerne"></i>
+                        <i class="fa-solid fa-star" aria-label="Full Stjerne"></i>
+                        <i class="fa-regular fa-star" aria-label="Tøm stjerne"></i>
                         <span>842 REVIEWS</span>
                     <!--Bildet er tatt av <a href="https://pixabay.com/no/users/toby_parsons-4634294/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3169357">Toby Parsons</a> fra <a href="https://pixabay.com/no//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3169357">Pixabay</a>-->
                     </article>
@@ -136,85 +137,85 @@
             </div>
         </section>
 
-            <section id="katagorier" class="populære-katagorier">
-                <h2>Våre mest populære kategorier</h2>
+            <section id="katagorier" class="populære-katagorier" aria-labelledby="katagorier-heading">
+                <h2 id="katagorier-heading">Våre mest populære kategorier</h2>
                 <p>Oppdag det beste av det beste</p>      
                 <div class="catagory-grid">
-                    <article>
+                    <article aria-label="Kategori 1">
                         <h4 id="katago">CATEGORY 1</h4>
                     </article>
 
                     <!--Image by <a href="https://pixabay.com/users/anrita1705-11109462/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8222052">Anrita</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8222052">Pixabay</a>-->
-                    <article>
-                        <h4 id="katago">CATEGORY 2</h4>
+                    <article aria-label="Kategori 2">
+                        <h4 class="katago">CATEGORY 2</h4>
                     </article>
                     <!--Image by <a href="https://pixabay.com/users/itayverchik-4214193/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7275452">itay verchik</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7275452">Pixabay</a>-->
-                    <article>
-                        <h4 id="katago">CATEGORY 3</h4>
+                    <article aria-label="Kategori 3">
+                        <h4 class="katago">CATEGORY 3</h4>
                     </article>
                     <!--Image by <a href="https://pixabay.com/users/grumpybeere-22072131/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=9153725">GrumpyBeere</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=9153725">Pixabay</a>-->
-                    <article>
-                        <h4 id="katago">CATEGORY 4</h4>
+                    <article aria-label="Kategori 4">
+                        <h4 class="katago">CATEGORY 4</h4>
                     </article>
                     <!--Image by <a href="https://pixabay.com/users/ryanmcguire-123690/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=371238">Ryan McGuire</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=371238">Pixabay</a>-->
-                    <article>
-                        <h4 id="katago">CATEGORY 5</h4>
+                    <article aria-label="Kategori 5">
+                        <h4 class="katago">CATEGORY 5</h4>
                     </article>
                     <!--Image by <a href="https://pixabay.com/users/amazingartwork-29194516/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8697226">boris rager</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8697226">Pixabay</a>-->
                 </div>
             </section>
             <section class="reviews">
-                <h2>Anmeldelser</h2>
+                <h2 id="reviews-heading">Anmeldelser</h2>
                 <div class="review-grid">
-                    <article>
-                        <img src="Bilder/reviw.png" alt="Robert labrador">
+                    <article aria-label="Anmeldelse fra Robert labrador">
+                        <img src="Bilder/reviw.png" alt="Profilbilde av Robert labrador">
                         <!--Image by <a href="https://pixabay.com/users/geralt-9301/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=9095354">Gerd Altmann</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=9095354">Pixabay</a>-->
                         <h3>Robert Labrador</h3>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-solid fa-star" aria-label="Full stjerne"></i>
+                        <i class="fa-solid fa-star" aria-label="Full stjerne"></i>
+                        <i class="fa-solid fa-star" aria-label="Full stjerne"></i>
+                        <i class="fa-regular fa-star" aria-label="Tøm stjerne"></i>
+                        <i class="fa-regular fa-star" aria-label="Tøm stjerne"></i>
                         <p>nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>
                     </article>
-                    <article>
-                        <img src="Bilder/reviw.png" alt="Robert labrador">
+                    <article aria-label="Anmeldelse fra Robert labrador">
+                        <img src="Bilder/reviw.png" alt="Profilbilde av Robert labrador">
                         <!--Image by <a href="https://pixabay.com/users/geralt-9301/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=9095354">Gerd Altmann</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=9095354">Pixabay</a>-->
                         <h3>Robert Labrador</h3>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-solid fa-star" aria-label="Full stjerne"></i>
+                        <i class="fa-solid fa-star" aria-label="Full stjerne"></i>
+                        <i class="fa-solid fa-star" aria-label="Full stjerne"></i>
+                        <i class="fa-regular fa-star" aria-label="Tøm stjerne"></i>
+                        <i class="fa-regular fa-star" aria-label="Tøm stjerne"></i>
                         <p>nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>
                     </article>
-                    <article>
-                        <img src="Bilder/reviw.png" alt="Robert labrador">
+                    <article aria-label="Anmeldelse fra Robert labrador">
+                        <img src="Bilder/reviw.png" alt="Profilbilde av Robert labrador">
                         <!--Image by <a href="https://pixabay.com/users/geralt-9301/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=9095354">Gerd Altmann</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=9095354">Pixabay</a>-->
                         <h3>Robert Labrador</h3>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-solid fa-star" aria-label="Full stjerne"></i>
+                        <i class="fa-solid fa-star" aria-label="Full stjerne"></i>
+                        <i class="fa-solid fa-star" aria-label="Full stjerne"></i>
+                        <i class="fa-regular fa-star" aria-label="Tøm stjerne"></i>
+                        <i class="fa-regular fa-star" aria-label="Tøm stjerne"></i>
                         <p>nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>
                     </article>
-                    <article>
-                        <img src="Bilder/reviw.png" alt="Robert labrador">
+                    <article aria-label="Anmeldelse fra Robert labrador">
+                        <img src="Bilder/reviw.png" alt="Profilbilde av Robert labrador">
                         <!--Image by <a href="https://pixabay.com/users/geralt-9301/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=9095354">Gerd Altmann</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=9095354">Pixabay</a>-->
                         <h3>Robert Labrador</h3>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-solid fa-star" aria-label="Full stjerne"></i>
+                        <i class="fa-solid fa-star" aria-label="Full stjerne"></i>
+                        <i class="fa-solid fa-star" aria-label="Full stjerne"></i>
+                        <i class="fa-regular fa-star" aria-label="Tøm stjerne"></i>
+                        <i class="fa-regular fa-star" aria-label="Tøm stjerne"></i>
                         <p>nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>
                     </article>
                 </div>
             </section>
             
     </main>
-    <footer id="kontakt">
+    <footer id="kontakt" role="contentinfo">
         <!--Logo + innhold-->
         <section class="footer-content">
             <h2>LOGO</h2>
@@ -223,27 +224,28 @@
         <!--Kontakt-->
         <section class="footer-contact">
             <h3>KONTAKT</h3>
-            <p><i class="fa-solid fa-location-dot"></i><strong>Adresse:</strong> B R A Veien 4, 1757 Halden </p>
-            <p><i class="fa-solid fa-phone"></i><strong>Telefon:</strong> 69 69 80 00 </p>
-            <p><i class="fa-solid fa-envelope"></i><strong>E-post:</strong> halden@hiof.no </p>
-            <p><i class="fa-solid fa-clock"></i><strong>Åpningstider:</strong> Stenger 15:00 </p>
+            <p><i class="fa-solid fa-location-dot" aria-label="lokasjonikone"></i><strong>Adresse:</strong> B R A Veien 4, 1757 Halden </p>
+            <p><i class="fa-solid fa-phone" aria-label="Telfonikon"></i><strong>Telefon:</strong> 69 69 80 00 </p>
+            <p><i class="fa-solid fa-envelope" aria-label="postbrev"></i><strong>E-post:</strong> halden@hiof.no </p>
+            <p><i class="fa-solid fa-clock" aria-label="Klokkeikone"></i><strong>Åpningstider:</strong> Stenger 15:00 </p>
         </section>
         <!--Snarveier-->
         <section class="footer-links">
             <h3>SNARVEIER</h3>
             <ul>
-                <li><a href="product.html">Produkter</a></li>
-                <li><a href="#katagorier">Katagorier</a></li>
+                <li><a href="index.html#populære-produkter">Produkter</a></li>
+                <li><a href="index.html#katagorier">Katagorier</a></li>
                 <li><a href="#kontakt">Kontakt oss</a></li>
+                <li><a href="tilgjengelighetserklaring/tilgjengelighetserklaring-Mohamad_Abbas.pdf">WCAG</a></li>
             </ul>
         </section>
         <!--Sosiale Medier-->
         <section class="footer-social">
             <h3>SOSIALE MEDIER</h3>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram" aria-label="instagramikone"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook" aria-label="facebookikone"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin" aria-label="Linkedinikone"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest" aria-label="pintreestikone"></i></a>
         </section>
     </footer>
 </body>

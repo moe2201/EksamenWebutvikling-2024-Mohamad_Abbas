@@ -3,37 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-handel landingsside</title>
+    <title> Kasse - E-handel </title>
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
-    <header class="header">
-        <form class="search-form">
-            <input type="text" placeholder="Søk her...">
-            <button type="submit"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></button>
+    <a href="#main-content" class="skip-link">Hopp til innhold</a>
+    <header class="header" role="banner">
+        <form class="search-form" role="search" aria-label="Søk på siden">
+            <input type="text" id="search" placeholder="Søk her...">
+            <button type="submit" aria-label="Utfør søk"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></button>
         </form>
-        <nav class="navigation">
+        <nav class="navigation" aria-label="Hovedmeny">
             <ul class="nav-links">
                 <li><a href="index.html">Hjem</a></li>
                 <li><a href="#populære-produkter">Produkter</a></li>
-                <li><a href="index.html" class="logo">LOGO</a></li>
+                <li><a href="index.html" class="logo" aria-label>LOGO</a></li>
                 <li><a href="#katagorier">Kategorier</a></li>
                 <li><a href="#kontakt">Kontakt</a></li>
             </ul>
         </nav>
-        <div class="ikoner">
-            <a href="#"><i class="fa-regular fa-user"></i></a>
-            <a href="#"><i class="fa-regular fa-heart"></i></a>
-            <a href="checkout.html"><i class="fas fa-shopping-cart"></i></a>
+        <div class="ikoner" aria-label="Brukermeny">
+            <a href="#" aria-label="Profil"><i class="fa-regular fa-user"></i></a>
+            <a href="#" aria-label="Favoritter"><i class="fa-regular fa-heart"></i></a>
+            <a class="ikone-kart" href="checkout.html" aria-label="Handlekurv"><i class="fas fa-shopping-cart"></i></a>
         </div>
     </header>
-    <main>
+    <main id="main-content">
+        <a class="forsett-handle" href="index.html#populære-produkter"><i class="fa-solid fa-arrow-left"></i> Forsett og handle</a>
         <h1 class="kasse-text">Kasse</h1>
         <section class="shoppingbag">
             <h2>1. SHOPPINGBAGEN DIN</h2>
             <article class="product-item">
-                <img src="Bilder/black-and-white-2561703_640.jpg" alt="dress">
+                <img src="Bilder/black-and-white-2561703_640.jpg" alt="Produkter bilde i handlekurv">
                 <!--Image by <a href="https://pixabay.com/users/stocksnap-894430/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2561703">StockSnap</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2561703">Pixabay</a>-->
                     <h3>PRODUCKT NAME</h3>
                     <p>Kr 1999</p>
@@ -47,12 +49,12 @@
                     <label for="quantity-1">Antall</label>
                     <input type="number" id="quantity-1" class="quantity" value="1" min="1" step="1">
                     <div class="actions">
-                        <button class="hjerte"><i class="fa-regular fa-heart"></i></button>
-                        <button class="remove"><i class="fas fa-trash"></i></button>
+                        <button class="hjerte"><i class="fa-regular fa-heart" aria-label="for å legge produkte til likt"></i></button>
+                        <button class="remove"><i class="fas fa-trash" aria-label="for å fjerne produkte"></i></button>
                     </div>
             </article>
             <article class="product-item">
-                <img src="Bilder/black-and-white-2561703_640.jpg" alt="dress">
+                <img src="Bilder/black-and-white-2561703_640.jpg" alt="Pordukt bilde i handlekurv">
                  <!--Image by <a href="https://pixabay.com/users/stocksnap-894430/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2561703">StockSnap</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2561703">Pixabay</a>-->
                     <h3>PRODUCKT NAME</h3>
                     <p>Kr 1999</p>
@@ -66,12 +68,12 @@
                     <label for="quantity-2">Antall</label>
                     <input type="number" id="quantity-2" class="quantity" value="1" min="1">
                     <div class="actions">
-                        <button class="hjerte"><i class="fa-regular fa-heart"></i></button>
-                        <button class="remove"><i class="fas fa-trash"></i></button>
+                        <button class="hjerte"><i class="fa-regular fa-heart" aria-label="Legg til i favoritter"></i></button>
+                        <button class="remove"><i class="fas fa-trash" aria-label="slett fra handlekurven"></i></button>
                     </div>
             </article>
             <article class="product-item">
-                <img src="Bilder/black-and-white-2561703_640.jpg" alt="dress">
+                <img src="Bilder/black-and-white-2561703_640.jpg" alt="Porodukt bilde i handlekurv">
                 <!--Image by <a href="https://pixabay.com/users/stocksnap-894430/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2561703">StockSnap</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2561703">Pixabay</a>-->
                     <h3>PRODUCKT NAME</h3>    
                     <p>Kr 1999</p>
@@ -85,8 +87,8 @@
                     <label for="quantity-3">Antall</label>
                     <input type="number" id="quantity-3" class="quantity" value="1" min="1">
                     <div class="actions">
-                        <button class="hjerte"><i class="fa-regular fa-heart"></i></button>
-                        <button class="remove"><i class="fas fa-trash"></i></button>
+                        <button class="hjerte"><i class="fa-regular fa-heart" aria-label="Legg til i favoritter"></i></button>
+                        <button class="remove"><i class="fas fa-trash" aria-label="slett fra handlekurven"></i></button>
                     </div>
             </article>
         </section>
@@ -97,30 +99,30 @@
                 <p>Leveringsadresse</p>
                 <section class="two-columns">
                     <label for="fname">Fornavn</label>
-                    <input type="text" id="fname" placeholder="Nora*" required>
+                    <input type="text" id="fname" autocomplete="name" placeholder="Nora*" required>
 
                     <label for="enavn">Etternavn</label>
-                    <input type="text" id="enavn" placeholder="Nordman*" required>
+                    <input type="text" id="enavn" autocomplete="family-name" placeholder="Nordman*" required>
                 </section>
 
                 <label for="adresse">Gateadresse</label>
-                <input type="text" id="adresse" placeholder="B R A Veien 4*" required>
+                <input type="text" id="adresse"  placeholder="B R A Veien 4*" required>
 
                 <section class="half-row">
                     <label for="postkode">Postnummer</label>
                     <input type="number" id="postkode" placeholder="1752*" required>
 
                     <label for="poststed">Poststed</label>
-                    <input type="text" id="poststed" placeholder="Halden*">
+                    <input type="text" id="poststed" autocomplete="address-level2" placeholder="Halden*">
                 </section>
                 <div class="section-break"></div>
 
                 <p>Kontaktinformasjon</p>
                 <label for="epost">E-post</label>
-                <input type="email" id="epost" placeholder="Noranordman@hiof.no...*" required>
+                <input type="email" id="epost"  autocomplete="email" placeholder="Noranordman@hiof.no...*" required>
 
                 <label for="tlf">Telefon</label>
-                <input type="tel" id="tlf" pattern="(\d{8}|\d{3} \d{2} \d{3})" placeholder="+4749***018" required>
+                <input type="tel" id="tlf" autocomplete="tel" pattern="\d{8}|\+\d{10}" placeholder="+4749***018" required>
                 <button type="submit">Lagre</button>
             </form>
             <a href="checkout.html">Avbryt</a>
@@ -135,18 +137,18 @@
                 <label for="express-hjemmelevering">Express hjemlevering</label>
                 <p>3-4 Virkedager</p>
                 <p class="price">59 kr <i class="fa-solid fa-truck"></i></p>
-                <p id="linje">bestill hverdag før 08:00* for levering neste arbeidsdag. leveres hjem til deg før frokost mandag til lørdag. *For levering til postnummer 4000-7999 er leveringstiden 2 arbeidsdager, for postnummer 8000-9999 er leveringstiden 3 arbeidsdager.</p>
+                <p class="linje">bestill hverdag før 08:00* for levering neste arbeidsdag. leveres hjem til deg før frokost mandag til lørdag. *For levering til postnummer 4000-7999 er leveringstiden 2 arbeidsdager, for postnummer 8000-9999 er leveringstiden 3 arbeidsdager.</p>
   
                 <input type="radio" id="express-pakke" name="delivery">
                 <label for="express-pakke">Express pakke til utleveringssted</label>
                 <p>1-3 Virkedager</p>
-                <p id="linje"> 59 kr <i class="fa-brands fa-dhl"></i></p>
+                <p class="linje"> 59 kr <i class="fa-brands fa-dhl"></i></p>
    
                 <input type="radio" id="standard-hjemlevering" name="delivery">
                 <label for="standard-hjemlevering">Standard hjemlevering</label>
                 <p>5-8 Virkedager</p>
                 <p class="price"> Gratis <i class="fa-solid fa-box"></i></p>
-                <p id="linje">Leveres hjem til deg før frokost mandag til lørdag innen 4-7 hverdager.</p>
+                <p class="linje">Leveres hjem til deg før frokost mandag til lørdag innen 4-7 hverdager.</p>
             </form>
         </section>
     </section>
@@ -172,7 +174,7 @@
                 <p class="confirmation-text">Du bekrefter herved at opplysningene og dokumentene du har oppgitt er korrekte og fullstendige. leverandøren forbeholder seg retten til å heve eller avlustte avtaleforholdet dersom deet foreligger uriktige eller ufullstendige opplysninger</p>
                 <section class="conf">
                     <input type="checkbox" id="nyhets" class="godta-info" required>
-                    <label for="nyhets" class="checkbox-label">Ja takk! Send nyhetsbrev ril meg.</label>
+                    <label for="nyhets" class="checkbox-label">Ja, Jeg har lest innholde og godkjenner.</label>
 
                     <input type="checkbox" id="tekstmeldinger" class="nyheter-box">
                     <label for="tekstmeldinger" class="checkbox-label-1">Jeg ønsker å motta tekstmeldinger med tilbud og nyheter.</label>
@@ -180,7 +182,7 @@
             </form>
         </section>
     </main>
-    <footer id="kontakt">
+    <footer id="kontakt" role="contentinfo">
         <!--Logo + innhold-->
         <section class="footer-content">
             <h2>LOGO</h2>
@@ -189,27 +191,28 @@
         <!--Kontakt-->
         <section class="footer-contact">
             <h3>KONTAKT</h3>
-            <p><i class="fa-solid fa-location-dot"></i><strong>Adresse:</strong> B R A Veien 4, 1757 Halden </p>
-            <p><i class="fa-solid fa-phone"></i><strong>Telefon:</strong> 69 69 80 00 </p>
-            <p><i class="fa-solid fa-envelope"></i><strong>E-post:</strong> halden@hiof.no </p>
-            <p><i class="fa-solid fa-clock"></i><strong>Åpningstider:</strong> Stenger 15:00 </p>
+            <p><i class="fa-solid fa-location-dot" aria-label="lokasjonikone"></i><strong>Adresse:</strong> B R A Veien 4, 1757 Halden </p>
+            <p><i class="fa-solid fa-phone" aria-label="Telfonikon"></i><strong>Telefon:</strong> 69 69 80 00 </p>
+            <p><i class="fa-solid fa-envelope" aria-label="postbrev"></i><strong>E-post:</strong> halden@hiof.no </p>
+            <p><i class="fa-solid fa-clock" aria-label="Klokkeikone"></i><strong>Åpningstider:</strong> Stenger 15:00 </p>
         </section>
         <!--Snarveier-->
         <section class="footer-links">
             <h3>SNARVEIER</h3>
             <ul>
-                <li><a href="product.html">Produkter</a></li>
-                <li><a href="#katagorier">Katagorier</a></li>
+                <li><a href="index.html#populære-produkter">Produkter</a></li>
+                <li><a href="index.html#katagorier">Katagorier</a></li>
                 <li><a href="#kontakt">Kontakt oss</a></li>
+                <li><a href="tilgjengelighetserklaring/tilgjengelighetserklaring-Mohamad_Abbas.pdf">WCAG</a></li>
             </ul>
         </section>
         <!--Sosiale Medier-->
         <section class="footer-social">
             <h3>SOSIALE MEDIER</h3>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram" aria-label="instagramikone"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook" aria-label="facebookikone"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin" aria-label="Linkedinikone"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest" aria-label="pintreestikone"></i></a>
         </section>
     </footer>
 </body>
