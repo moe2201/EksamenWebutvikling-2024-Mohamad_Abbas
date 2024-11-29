@@ -9,7 +9,7 @@
 </head>
 <body>
     <a href="#main-content" class="skip-link">Hopp til innhold</a>
-    <header class="header" role="banner">
+    <header id="top" class="header" role="banner">
         <form class="search-form" role="search" aria-label="Søk på siden">
             <input type="text" id="search" placeholder="Søk her...">
             <button type="submit" aria-label="Utfør søk"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></button>
@@ -95,25 +95,29 @@
 
         <section class="din-info">
             <h2>2. Dine opplysninger</h2>
-            <form method="get" action="#levering-info">
+            <form class="dine-opplysninger-form" method="get" action="#levering-info">
                 <p>Leveringsadresse</p>
-                <section class="two-columns">
-                    <label for="fname">Fornavn</label>
-                    <input type="text" id="fname" autocomplete="name" placeholder="Nora*" required>
-
-                    <label for="enavn">Etternavn</label>
-                    <input type="text" id="enavn" autocomplete="family-name" placeholder="Nordman*" required>
-                </section>
-
-                <label for="adresse">Gateadresse</label>
-                <input type="text" id="adresse"  placeholder="B R A Veien 4*" required>
-
-                <section class="half-row">
-                    <label for="postkode">Postnummer</label>
-                    <input type="number" id="postkode" placeholder="1752*" required>
-
-                    <label for="poststed">Poststed</label>
-                    <input type="text" id="poststed" autocomplete="address-level2" placeholder="Halden*">
+                <section class="linjer">
+                    <section class="two-columns">
+                        <label for="fname">Fornavn</label>
+                        <input type="text" id="fname" autocomplete="name" placeholder="Nora*" required>
+                    </section>
+                    <section class="two-columns">
+                        <label for="enavn">Etternavn</label>
+                        <input type="text" id="enavn" autocomplete="family-name" placeholder="Nordman*" required>
+                    </section>
+                    
+                        <label for="adresse">Gateadresse</label>
+                        <input type="text" id="adresse"  placeholder="B R A Veien 4*" required>
+                    
+                    <section class="two-columns">
+                        <label for="postkode">Postnummer</label>
+                        <input type="number" id="postkode" placeholder="1752*" required>
+                    </section>
+                    <section class="two-columns">
+                        <label for="poststed">Poststed</label>
+                        <input type="text" id="poststed" autocomplete="address-level2" placeholder="Halden*">
+                    </section>
                 </section>
                 <div class="section-break"></div>
 
@@ -125,30 +129,34 @@
                 <input type="tel" id="tlf" autocomplete="tel" pattern="\d{8}|\+\d{10}" placeholder="+4749***018" required>
                 <button type="submit">Lagre</button>
             </form>
-            <a href="checkout.html">Avbryt</a>
+            <a class="avbryt-link" href="checkout.html">Avbryt</a>
         </section>
 
     <section class="valg-cont">    
         <section class="leverings-valg" id="levering-info">
             <h2>3. Levering</h2>
             <h3>LEVERINGSVALG</h3>
-            <form>
+            <form class="form-border">
+                <section class="border-levering-valg">
                 <input type="radio" id="express-hjemmelevering" name="delivery" required>
-                <label for="express-hjemmelevering">Express hjemlevering</label>
-                <p>3-4 Virkedager</p>
-                <p class="price">59 kr <i class="fa-solid fa-truck"></i></p>
-                <p class="linje">bestill hverdag før 08:00* for levering neste arbeidsdag. leveres hjem til deg før frokost mandag til lørdag. *For levering til postnummer 4000-7999 er leveringstiden 2 arbeidsdager, for postnummer 8000-9999 er leveringstiden 3 arbeidsdager.</p>
-  
-                <input type="radio" id="express-pakke" name="delivery">
-                <label for="express-pakke">Express pakke til utleveringssted</label>
-                <p>1-3 Virkedager</p>
-                <p class="linje"> 59 kr <i class="fa-brands fa-dhl"></i></p>
-   
-                <input type="radio" id="standard-hjemlevering" name="delivery">
-                <label for="standard-hjemlevering">Standard hjemlevering</label>
-                <p>5-8 Virkedager</p>
-                <p class="price"> Gratis <i class="fa-solid fa-box"></i></p>
-                <p class="linje">Leveres hjem til deg før frokost mandag til lørdag innen 4-7 hverdager.</p>
+                    <label for="express-hjemmelevering">Express hjemlevering</label>
+                    <p>3-4 Virkedager</p>
+                    <p class="price">59 kr <i class="fa-solid fa-truck"></i></p>
+                    <p class="linje">bestill hverdag før 08:00* for levering neste arbeidsdag. leveres hjem til deg før frokost mandag til lørdag. *For levering til postnummer 4000-7999 er leveringstiden 2 arbeidsdager, for postnummer 8000-9999 er leveringstiden 3 arbeidsdager.</p>
+                </section>
+                <section class="border-levering-valg">
+                    <input type="radio" id="express-pakke" name="delivery">
+                    <label for="express-pakke">Express pakke til utleveringssted</label>
+                    <p>1-3 Virkedager</p>
+                    <p class="linje"> 59 kr <i class="fa-brands fa-dhl"></i></p>
+                </section>
+                <section class="border-levering-valg">    
+                    <input type="radio" id="standard-hjemlevering" name="delivery">
+                    <label for="standard-hjemlevering">Standard hjemlevering</label>
+                    <p>5-8 Virkedager</p>
+                    <p class="price"> Gratis <i class="fa-solid fa-box"></i></p>
+                    <p class="linje">Leveres hjem til deg før frokost mandag til lørdag innen 4-7 hverdager.</p>
+                </section>    
             </form>
         </section>
     </section>
@@ -158,13 +166,12 @@
             <form>
                 <label for="kort-nummer">Kortnummer</label>
                 <input type="number" id="kort-nummer" placeholder="342342****4435" required>
-
                 <label for="expiry">Utløpsdato</label>
                 <input type="date" id="expiry" required>
 
                 <label for="CVC">CVC/CVV</label>
                 <input type="number" id="CVC" placeholder="CVC/CVV" required>
-
+            
                 <hr class="divider">
 
                 <p class="total-amount">Å betale inkl. mva. <strong>1 199 kr</strong></p>
@@ -203,17 +210,21 @@
                 <li><a href="index.html#populære-produkter">Produkter</a></li>
                 <li><a href="index.html#katagorier">Katagorier</a></li>
                 <li><a href="#kontakt">Kontakt oss</a></li>
-                <li><a href="tilgjengelighetserklaring/tilgjengelighetserklaring-Mohamad_Abbas.pdf">WCAG</a></li>
+                <li><a href="tilgjengelighetserklaring/WCAG-Mohamad_Abbas.pdf">WCAG</a></li>
             </ul>
         </section>
         <!--Sosiale Medier-->
         <section class="footer-social">
             <h3>SOSIALE MEDIER</h3>
-            <a href="#"><i class="fa-brands fa-instagram" aria-label="instagramikone"></i></a>
-            <a href="#"><i class="fa-brands fa-facebook" aria-label="facebookikone"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin" aria-label="Linkedinikone"></i></a>
-            <a href="#"><i class="fa-brands fa-pinterest" aria-label="pintreestikone"></i></a>
+            <a href="https://www.instagram.com"><i class="fa-brands fa-instagram" aria-label="instagramikone"></i></a>
+            <a href="https://www.facebook.com"><i class="fa-brands fa-facebook" aria-label="facebookikone"></i></a>
+            <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin" aria-label="Linkedinikone"></i></a>
+            <a href="https://no.pinterest.com"><i class="fa-brands fa-pinterest" aria-label="pintreestikone"></i></a>
         </section>
     </footer>
+    <a href="#top" id="hopp-til-toppen" aria-label="Hopp til toppen">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
 </body>
 </html>
